@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/Fortifyscan12/PackerDeploy/_apis/build/status/imsauravroy007.pipelines-java?branchName=main)](https://dev.azure.com/Fortifyscan12/PackerDeploy/_build/latest?definitionId=5&branchName=main)
 
 # Contributing
 
