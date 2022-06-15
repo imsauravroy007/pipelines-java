@@ -6,8 +6,14 @@
 trigger:
 - main
 
+resources:
+ pipelines:
+   -  pipeline: 
+
+
 pool:
   vmImage: ubuntu-latest
+
 
 steps:
 - task: Maven@3
