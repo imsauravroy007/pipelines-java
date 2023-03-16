@@ -7,3 +7,13 @@ DependsOn: A
 condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
 steps:
 - script: echo this only runs for master
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
